@@ -36,8 +36,13 @@ RegisterNumber:
 */
 ## RTL realization
 
+
 ## Output:
 ## RTL
+![WhatsApp Image 2023-01-22 at 11 23 01 AM](https://user-images.githubusercontent.com/119345345/213902693-d57f3416-b8cb-4849-a13d-b48c3e46bda4.jpeg)
+
 ## Timing Diagram
+![WhatsApp Image 2023-01-22 at 11 23 02 AM](https://user-images.githubusercontent.com/119345345/213902712-8c66e721-c165-427f-885e-f03ff49fabc2.jpeg)
+
 ## Result:
 Thus the given logic functions are implemented using NAND and NOR gates and their operations are verified using Verilog programming.
