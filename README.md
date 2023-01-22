@@ -28,15 +28,64 @@ F=(((C.B'.A)+(D.C'.A)+(C.B'.A))')'
 
 ## Logic Diagram
 ## Procedure
+1. Create a project with required entities.
+2. Create a module along with respective file name.
+3. Run the respective programs for the given boolean equations.
+4. Run the module and get the respective RTL outputs.
+5. Create university program(VWF) for getting timing diagram.
+6. Give the respective inputs for timing diagram and obtain the results.
+
 ## Program:
+
+## Using NAND Operation:
+
+module expfour(a,b,c,d,f);
+
+input a,b,c,d;
+
+output f;
+
+wire p,q,r;
+
+assign p=(~c & b & a);
+
+assign q=(~d & c & ~a);
+
+assign r=(c & ~b & a);
+
+assign f=(~(~p & ~q & ~r));
+
+endmodule
+
+## Using NOR operation:
+
+module expfourone(a,b,c,d,f);
+
+input a,b,c,d;
+
+output f;
+
+wire x,y,z;
+
+assign x=( c & ~b & a);
+
+assign y=( d & ~c & a);
+
+assign z=( c & ~b & a);
+
+assign f=(~(~( x | y | z)));
+
+endmodule
+
 /*
 Program to implement the given logic function using NAND and NOR gates and to verify its operations in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+
+Developed by: HARISH RAGAV S
+
+RegisterNumber: 22008415
+
 */
 ## RTL realization
-
-
 ## Output:
 ## RTL
 ![WhatsApp Image 2023-01-22 at 11 23 01 AM](https://user-images.githubusercontent.com/119345345/213902693-d57f3416-b8cb-4849-a13d-b48c3e46bda4.jpeg)
